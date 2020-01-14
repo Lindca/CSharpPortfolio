@@ -1,31 +1,484 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<head>
+    <meta charset="utf-8">
+    <style data-styles="">
+        ion-icon {
+            visibility: hidden
+        }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        .hydrated {
+            visibility: inherit
+        }
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link href="https://unpkg.com/ionicons@4.5.9-1/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.9-1/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.9-1/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css">
+    <title>Lindsay Campbell</title>
+    <link href="/static/css/main.16a0cae0.chunk.css" rel="stylesheet">
+    <script async="" src="https://negbar.ad-blocker.org/chrome/adblocker-chromeglobalinjectjs.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            <nav class="navbar navbar-expand-md">
+                <a href="/" class="navbar-brand">LC</a><button type="button"
+                                                               class="navbar-toggler">
+                    <ion-icon name="menu" role="img" class="md hydrated" aria-label="menu"></ion-icon>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link"><a data-scroll="true" href="#AboutMe">About Me</a></a></li>
+                        <li class="nav-item">
+                            <a class="nav-link"><a data-scroll="true" href="#Projects">Projects</a></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link"><a data-scroll="true" href="#Resume">Resume</a></a></li>
+                        <li class="nav-item">
+                            <a class="nav-link"><a data-scroll="true" href="#ContactMe">Contact Me</a></a>
+                        </li>
+                    </ul>
+                    <ul class="ml-auto navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <a target="_blank" to="https://github.com/Lindca">
+                                    <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github">
+                                    </ion-icon>
+                                </a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <a target="_blank"
+                                   href="https://www.linkedin.com/in/lindsay-campbell-06517417b/">
+                                    <ion-icon name="logo-linkedin" role="img" class="md hydrated"
+                                              aria-label="logo linkedin"></ion-icon>
+                                </a>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="containerImage parallax">
+            <div class="container containerText">
+                <div class="image-content">
+                    <div class="image-text">
+                        <h1>LINDSAY CAMPBELL</h1>
+                        <h3>FULL STACK DEVELOPER</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="AboutMe" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h5>My Skills</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-sm-3">
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/react.png">
+                                    <h5>React.js</h5>
+                                </div>
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/HTML5.png">
+                                    <h5>HTML5</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-3">
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/python.png">
+                                    <h5>Python</h5>
+                                </div>
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/nodejs.jpg">
+                                    <h5>Node.js</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-3">
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/CSS3.png">
+                                    <h5>CSS3</h5>
+                                </div>
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/MySQL.png">
+                                    <h5>MySQL</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-3">
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/sequelize.png">
+                                    <h5>Sequelize</h5>
+                                </div>
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/jquery.jpeg">
+                                    <h5>jQuery</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-3">
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/mongoDB.jpg">
+                                    <h5>MongoDB</h5>
+                                </div>
+                                <div class="skillIcon">
+                                    <img alt="" src="./images/js.png">
+                                    <h5>Javascript</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <h5>Who am I?</h5>
+                                <p>
+                                    Full Stack Developer with a background in Health Insurance and a Full-Stack Certification
+                                    from the University of California - Davis Coding Bootcamp. Passionate about the endless
+                                    possibilities programming gives and the creativity and logic required for it. Skilled in
+                                    Jquery, Node.js, and python.
+                                </p>
+                                <p>
+                                    Deeply motivated by the thrill of grasping and understanding new concepts and applying
+                                    them. Known for my dedication to unique projects and continually demonstrating my
+                                    ability to improve and learn from every line of code. Looking to bring a positive
+                                    attitude and an unrelenting drive to every endeavor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black" id="Projects">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="imgHover">
+                                    <img width="100%" class="img-fluid" src="./screenshots/mes.png"
+                                         alt="Card image cap">
+                                    <div class="overlay ctr">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="">
+                                                    <h6>MAKE.iT (MES)</h6>
+                                                    <p>
+                                                        An application for the entire manufacturing process of a small
+                                                        business, stores records of orders, recipes and inventory.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://github.com/Lindca/project-cool-mes">
+                                                        <ion-icon name="logo-github" role="img" class="md hydrated"
+                                                                  aria-label="logo github"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://enigmatic-plains-72936.herokuapp.com/">
+                                                        <ion-icon name="desktop" role="img" class="md hydrated"
+                                                                  aria-label="desktop"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="imgHover">
+                                    <img width="100%" class="img-fluid" src="./screenshots/gradebook.png"
+                                         alt="Card image cap">
+                                    <div class="overlay ctr">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="">
+                                                    <h6>My Grade Book</h6>
+                                                    <p>
+                                                        An online Grade Book to store and update data for students such as
+                                                        grades and assignments.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://github.com/Lindca/project-ld3">
+                                                        <ion-icon name="logo-github" role="img" class="md hydrated"
+                                                                  aria-label="logo github"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://pacific-taiga-52007.herokuapp.com/">
+                                                        <ion-icon name="desktop" role="img" class="md hydrated"
+                                                                  aria-label="desktop"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="imgHover">
+                                    <img width="100%" class="img-fluid" src="./screenshots/crave.png"
+                                         alt="Card image cap">
+                                    <div class="overlay ctr">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="">
+                                                    <h6>Sacramento Crave</h6>
+                                                    <p>
+                                                        An application for searching recipes or restaurants in the local
+                                                        area, built with jquery.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://github.com/Lindca/Project1">
+                                                        <ion-icon name="logo-github" role="img" class="md hydrated"
+                                                                  aria-label="logo github"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://jenniferhjones.github.io/Project1/">
+                                                        <ion-icon name="desktop" role="img" class="md hydrated"
+                                                                  aria-label="desktop"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="imgHover">
+                                    <img width="100%" class="img-fluid" src="./screenshots/dinoclicky.png"
+                                         alt="Card image cap">
+                                    <div class="overlay ctr">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="">
+                                                    <h6>Clicky Dino Game</h6>
+                                                    <p>
+                                                        A game built with react.js where you can't click the same image twice
+                                                        or you lose.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://github.com/Lindca/ClickyGame">
+                                                        <ion-icon name="logo-github" role="img" class="md hydrated"
+                                                                  aria-label="logo github"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://salty-lake-48080.herokuapp.com/">
+                                                        <ion-icon name="desktop" role="img" class="md hydrated"
+                                                                  aria-label="desktop"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="imgHover">
+                                    <img width="100%" class="img-fluid" src="./screenshots/bamazon.png"
+                                         alt="Card image cap">
+                                    <div class="overlay ctr">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="">
+                                                    <h6>Bamazon</h6>
+                                                    <p>
+                                                        A command line app built with Node.js for inventory storage and
+                                                        customer purchases.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://github.com/Lindca/bamazon">
+                                                        <ion-icon name="logo-github" role="img" class="md hydrated"
+                                                                  aria-label="logo github"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="imgHover">
+                                    <img width="100%" class="img-fluid"
+                                         src="./screenshots/eatdaburger.jpg" alt="Card image cap">
+                                    <div class="overlay ctr">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="">
+                                                    <h6>Eat da Burger</h6>
+                                                    <p>A burger eating simulation built with handlbars and Javascript.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://github.com/Lindca/eatBurger">
+                                                        <ion-icon name="logo-github" role="img" class="md hydrated"
+                                                                  aria-label="logo github"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="link-inline">
+                                                    <a target="_blank"
+                                                       href="https://morning-shore-31608.herokuapp.com/">
+                                                        <ion-icon name="desktop" role="img" class="md hydrated"
+                                                                  aria-label="desktop"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container" id="Resume">
+                <div class="links">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img class="displayed" alt="" src="./images/resume.png"><button class="displayed btn btn-secondary">
+                                <a download=""
+                                   href="./docs/LindsayCampbellResume.pdf">Download Resume</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black" id="ContactMe">
+            <div class="container">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="displayed">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="inline">
+                                    <ion-icon name="mail" role="img" class="md hydrated" aria-label="mail"></ion-icon>
+                                </div>
+                                <div class="inline">
+                                    <h5>EMAIL</h5>
+                                </div>
+                                <div class="inline">
+                                    <p><a class="email" href="mailto:lindscamp5@gmail.com">lindscamp5@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="link-inline">
+                                    <a target="_blank"
+                                       href="https://www.linkedin.com/in/lindsay-campbell-06517417b/">
+                                        <ion-icon name="logo-linkedin" role="img" class="md hydrated"
+                                                  aria-label="logo linkedin"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="link-inline">
+                                    <a target="_blank" to="https://github.com/Lindca">
+                                        <ion-icon name="logo-github" role="img" class="md hydrated"
+                                                  aria-label="logo github"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="inline">
+                                    <ion-icon name="call" role="img" class="md hydrated" aria-label="call"></ion-icon>
+                                </div>
+                                <div class="inline">
+                                    <h5>PHONE</h5>
+                                </div>
+                                <div class="inline">
+                                    <p>(916)261-9092</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <script>!function (l) { function e(e) { for (var r, t, n = e[0], o = e[1], u = e[2], f = 0, i = []; f < n.length; f++)t = n[f], p[t] && i.push(p[t][0]), p[t] = 0; for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]); for (s && s(e); i.length;)i.shift()(); return c.push.apply(c, u || []), a() } function a() { for (var e, r = 0; r < c.length; r++) { for (var t = c[r], n = !0, o = 1; o < t.length; o++) { var u = t[o]; 0 !== p[u] && (n = !1) } n && (c.splice(r--, 1), e = f(f.s = t[0])) } return e } var t = {}, p = { 1: 0 }, c = []; function f(e) { if (t[e]) return t[e].exports; var r = t[e] = { i: e, l: !1, exports: {} }; return l[e].call(r.exports, r, r.exports, f), r.l = !0, r.exports } f.m = l, f.c = t, f.d = function (e, r, t) { f.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, f.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, f.t = function (r, e) { if (1 & e && (r = f(r)), 8 & e) return r; if (4 & e && "object" == typeof r && r && r.__esModule) return r; var t = Object.create(null); if (f.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: r }), 2 & e && "string" != typeof r) for (var n in r) f.d(t, n, function (e) { return r[e] }.bind(null, n)); return t }, f.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return f.d(r, "a", r), r }, f.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, f.p = "/"; var r = window.webpackJsonp = window.webpackJsonp || [], n = r.push.bind(r); r.push = e, r = r.slice(); for (var o = 0; o < r.length; o++)e(r[o]); var s = n; a() }([])</script>
+    <script src="/static/js/2.74b12093.chunk.js"></script>
+    <script src="/static/js/main.557f1b4b.chunk.js"></script>
+    <script>const scroll = new SmoothScroll('a[href*="#"]');</script>
+</body>
